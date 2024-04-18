@@ -1,0 +1,28 @@
+# Multi-Program
+A program that imports my other programs so you only have to open one to use them all
+while True: 
+    #This program opens other programs and allows them to run depending on what the user would like to do.
+    
+    print("Welcome! This program allows you to access multiple smaller ones. You can use a Converter as well as play Tic_Tac_Toe or Connect Four.")
+    
+    program = input("What program would you like to use? ")
+    
+    if program in ['Convert','Tic_Tac_Toe','Connect_Four']:
+    
+        if program == "Convert":
+        
+            import Convert
+        
+        if program == "Tic_Tac_Toe":
+            
+            import TicTacToe
+    
+        if program == "Connect_Four":
+            
+            import Connect_Four
+    
+    
+    choice = input('Enter n to quit, or y to use another program: ') 
+    
+    if choice == "n" or choice == "N":
+        break     

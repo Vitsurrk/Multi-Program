@@ -1,5 +1,8 @@
 print('You can use Fahrenheit, Celsius, Kelvin, Metric units, Inches, Yards, Feet, Pounds, Ounces, Grams, Digital Storage units and Miles_per_Hour or Kilometers_per_Hour as well as Knots.')
 
+def Convert():
+    input('What units are you working with? ')
+
 units = input('What units are you working with? ')
 
 value = int(input (f"How many {units}? "))

@@ -1,5 +1,10 @@
 # Multi-Program
 A program that imports my other programs so you only have to open one to use them all
+
+import Convert
+import TicTacToe
+import Connect_Four
+
 while True: 
     #This program opens other programs and allows them to run depending on what the user would like to do.
     
@@ -11,15 +16,15 @@ while True:
     
         if program == "Convert":
         
-            import Convert
+            Convert()
         
         if program == "Tic_Tac_Toe":
             
-            import TicTacToe
+            TicTacToe()
     
         if program == "Connect_Four":
             
-            import Connect_Four
+            Connect_Four()
     
     
     choice = input('Enter n to quit, or y to use another program: ') 
